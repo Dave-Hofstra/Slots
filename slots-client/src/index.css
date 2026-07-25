@@ -248,6 +248,14 @@ html {
   to { clip-path: inset(0 0 0 95%); }
 }
 
+/* ===== Leaderboard Modal Scrollbar ===== */
+#leaderboard-modal .modal-content {
+  padding: 24px 16px !important;
+}
+#leaderboard-modal .modal-backdrop::-webkit-scrollbar { width: 4px; }
+#leaderboard-modal .modal-backdrop::-webkit-scrollbar-track { background: transparent; }
+#leaderboard-modal .modal-backdrop::-webkit-scrollbar-thumb { background: rgba(250,204,21,0.2); border-radius: 2px; }
+
 /* ===== Win Banner (Big Win / Huge Win) ===== */
 .win-banner-overlay {
   position: absolute;

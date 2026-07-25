@@ -6,6 +6,8 @@ import ReelGrid from './components/ReelGrid';
 import ControlPanel from './components/ControlPanel';
 import TestPanel from './components/TestPanel';
 import SoundEditor from './components/SoundEditor';
+import SoundThemePicker from './components/SoundThemePicker';
+import LeaderboardModal from './components/LeaderboardModal';
 import FreeSpinsModal from './components/FreeSpinsModal';
 import FreeSpinsResultsModal from './components/FreeSpinsResultsModal';
 import JackpotPicker from './components/JackpotPicker';
@@ -36,6 +38,7 @@ function AppContent({ showDebug, setShowDebug }) {
   const [giftToast, setGiftToast] = useState(null);
   const [fsRetrigger, setFsRetrigger] = useState(null);
   const [showShareQr, setShowShareQr] = useState(false);
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
 
   useEffect(() => {
     const onGift = () => {
@@ -67,9 +70,12 @@ function AppContent({ showDebug, setShowDebug }) {
       if (!window._hermesAudioInited) { window._hermesAudioInited = true; audioManager.init(); }
     }}>
       <NameScreen />
-      <Header setShowShareQr={setShowShareQr} />
+      <Header setShowShareQr={setShowShareQr} setShowLeaderboard={setShowLeaderboard} />
       <ReelGrid showDebug={showDebug} />
       <ControlPanel />
+      <div className="flex justify-center mt-2">
+        <SoundThemePicker />
+      </div>
       <TestPanel showDebug={showDebug} setShowDebug={setShowDebug} />
       {state.adminMode && <SoundEditor />}
       <VersionStamp />
@@ -81,6 +87,7 @@ function AppContent({ showDebug, setShowDebug }) {
       <JackpotPicker />
       <ThemeEditor />
       <ShareQrModal show={showShareQr} onClose={() => setShowShareQr(false)} />
+      <LeaderboardModal show={showLeaderboard} onClose={() => setShowLeaderboard(false)} />
 
       {giftToast && (
         <div

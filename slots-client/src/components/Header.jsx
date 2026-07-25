@@ -1,8 +1,7 @@
 import { useGame } from '../context/GameContext';
-import SoundThemePicker from './SoundThemePicker';
 import ShareQrButton from './ShareQrButton';
 
-export default function Header({ setShowShareQr }) {
+export default function Header({ setShowShareQr, setShowLeaderboard }) {
   const { state, dispatch, updateThemes, persistData } = useGame();
   const themeKeys = Object.keys(state.themes);
 
@@ -42,10 +41,17 @@ export default function Header({ setShowShareQr }) {
           >
             ✏️
           </button>
-          <SoundThemePicker />
           <ShareQrButton setShowShareQr={setShowShareQr} />
         </div>
         <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0" id="header-right">
+          <button
+            id="leaderboard-btn"
+            className="text-[#64748b] hover:text-[#facc15] text-sm transition-colors cursor-pointer bg-transparent border-none p-0 leading-none flex items-center gap-1"
+            title="Leaderboard"
+            onClick={() => setShowLeaderboard(true)}
+          >
+            🏆
+          </button>
           <span className="text-[#64748b] text-[10px] sm:text-xs font-digital tracking-wider whitespace-nowrap">BALANCE</span>
           <span id="balance-display" className="text-glow-green font-digital text-lg sm:text-xl md:text-2xl font-bold text-[#4ade80] whitespace-nowrap">
             ${state.balance.toLocaleString('en-US')}

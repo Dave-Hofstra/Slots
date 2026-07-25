@@ -183,8 +183,29 @@ export function GameProvider({ children }) {
     if (state.currentPlayer) {
       const data = loadPlayerData();
       if (!data[state.currentPlayer]) data[state.currentPlayer] = {};
-      data[state.currentPlayer].balance = balance;
-      data[state.currentPlayer].theme = theme;
+      const prev = data[state.currentPlayer];
+      const oldBalance = prev.balance != null ? prev.balance : balance;
+      const delta = balance - oldBalance;
+      prev.balance = balance;
+      prev.theme = theme;
+
+      // Weekly balance tracking
+      const now = new Date();
+      const day = now.getDay(); // 0=Sun, 1=Mon, ...
+      // Most recent Monday
+      const monday = new Date(now);
+      monday.setDate(now.getDate() - (day === 0 ? 6 : day - 1));
+      monday.setHours(0, 0, 0, 0);
+      const weekKey = monday.toISOString().slice(0, 10);
+
+      if (prev.weekStart !== weekKey) {
+        // Week rolled over — reset weekly tracking
+        prev.weekStart = weekKey;
+        prev.weeklyNet = 0;
+      }
+      if (prev.weeklyNet == null) prev.weeklyNet = 0;
+      prev.weeklyNet += delta;
+
       savePlayerData(data);
     }
   }, [state.currentPlayer]);
