@@ -1,0 +1,25 @@
+{
+  "name": "Slots",
+  "short_name": "Slots",
+  "description": "Slot machine casino game",
+  "start_url": "/Slots/",
+  "display": "standalone",
+  "display_override": ["standalone", "browser"],
+  "orientation": "any",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/Slots/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Slots/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

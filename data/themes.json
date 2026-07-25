@@ -1,0 +1,202 @@
+{
+  "basic": {
+    "name": "Basic",
+    "symbols": {
+      "J": {
+        "display": "J",
+        "color": "#4ade80"
+      },
+      "Q": {
+        "display": "Q",
+        "color": "#4ade80"
+      },
+      "K": {
+        "display": "K",
+        "color": "#4ade80"
+      },
+      "A": {
+        "display": "A",
+        "color": "#4ade80"
+      },
+      "club": {
+        "display": "🏌️",
+        "color": "#00d4ff"
+      },
+      "ball": {
+        "display": "⚪",
+        "color": "#ffffff"
+      },
+      "heron": {
+        "display": "🦩",
+        "color": "#ff6b9d"
+      },
+      "wild": {
+        "display": "⭐",
+        "color": "#ffd700"
+      },
+      "scatter": {
+        "display": "💎",
+        "color": "#c084fc"
+      },
+      "bonus": {
+        "display": "🎰",
+        "color": "#ff4444"
+      }
+    }
+  },
+  "scuba": {
+    "name": "SCUBA",
+    "symbols": {
+      "J": {
+        "_v": 2,
+        "imagePath": "/Slots/uploads/scuba/J.png?v=2"
+      },
+      "bonus": {
+        "imagePath": "/Slots/uploads/scuba/bonus.png?v=2",
+        "_v": 2
+      },
+      "scatter": {
+        "imagePath": "/Slots/uploads/scuba/scatter.png?v=2",
+        "_v": 2
+      },
+      "wild": {
+        "imagePath": "/Slots/uploads/scuba/wild.png?v=2",
+        "_v": 2
+      },
+      "heron": {
+        "imagePath": "/Slots/uploads/scuba/heron.png?v=1",
+        "_v": 1
+      },
+      "ball": {
+        "imagePath": "/Slots/uploads/scuba/ball.png?v=1",
+        "_v": 1
+      },
+      "club": {
+        "imagePath": "/Slots/uploads/scuba/club.png?v=1",
+        "_v": 1
+      },
+      "A": {
+        "imagePath": "/Slots/uploads/scuba/A.png?v=1",
+        "_v": 1
+      },
+      "K": {
+        "imagePath": "/Slots/uploads/scuba/K.png?v=1",
+        "_v": 1
+      },
+      "Q": {
+        "imagePath": "/Slots/uploads/scuba/Q.png?v=1",
+        "_v": 1
+      }
+    }
+  },
+  "herons-glen": {
+    "name": "Herons Glen",
+    "symbols": {
+      "J": {
+        "color": "#4ade80",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/herons-glen/J.png?v=2"
+      },
+      "Q": {
+        "color": "#4ade80",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/herons-glen/Q.png?v=2"
+      },
+      "K": {
+        "color": "#4ade80",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/herons-glen/K.png?v=2"
+      },
+      "A": {
+        "color": "#4ade80",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/herons-glen/A.png?v=2"
+      },
+      "club": {
+        "color": "#00d4ff",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/herons-glen/club.png?v=2"
+      },
+      "ball": {
+        "color": "#ffffff",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/herons-glen/ball.png?v=2"
+      },
+      "heron": {
+        "color": "#ff6b9d",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/herons-glen/heron.png?v=2"
+      },
+      "wild": {
+        "color": "#ffd700",
+        "_v": 3,
+        "imagePath": "/Slots/uploads/herons-glen/wild.png?v=3"
+      },
+      "scatter": {
+        "color": "#c084fc",
+        "_v": 3,
+        "imagePath": "/Slots/uploads/herons-glen/scatter.png?v=3"
+      },
+      "bonus": {
+        "color": "#ff4444",
+        "_v": 3,
+        "imagePath": "/Slots/uploads/herons-glen/bonus.png?v=3"
+      }
+    }
+  },
+  "hg-dark": {
+    "name": "HG Dark",
+    "symbols": {
+      "J": {
+        "color": "#4ade80",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/J.png?v=2"
+      },
+      "Q": {
+        "color": "#4ade80",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/Q.png?v=2"
+      },
+      "K": {
+        "color": "#4ade80",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/K.png?v=2"
+      },
+      "A": {
+        "color": "#4ade80",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/A.png?v=2"
+      },
+      "club": {
+        "color": "#00d4ff",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/club.png?v=2"
+      },
+      "ball": {
+        "color": "#ffffff",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/ball.png?v=2"
+      },
+      "heron": {
+        "color": "#ff6b9d",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/heron.png?v=2"
+      },
+      "wild": {
+        "color": "#ffd700",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/wild.png?v=2"
+      },
+      "scatter": {
+        "color": "#c084fc",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/scatter.png?v=2"
+      },
+      "bonus": {
+        "color": "#ff4444",
+        "_v": 2,
+        "imagePath": "/Slots/uploads/hg-dark/bonus.png?v=2"
+      }
+    }
+  }
+}
