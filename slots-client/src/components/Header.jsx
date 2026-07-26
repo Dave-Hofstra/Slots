@@ -41,17 +41,20 @@ export default function Header({ setShowShareQr, setShowLeaderboard }) {
           >
             ✏️
           </button>
-          <ShareQrButton setShowShareQr={setShowShareQr} />
         </div>
         <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0" id="header-right">
-          <button
-            id="leaderboard-btn"
-            className="text-[#64748b] hover:text-[#facc15] text-sm transition-colors cursor-pointer bg-transparent border-none p-0 leading-none flex items-center gap-1"
-            title="Leaderboard"
-            onClick={() => setShowLeaderboard(true)}
-          >
-            🏆
-          </button>
+          <span className="flex items-center gap-0.5 rounded-lg border border-[rgba(148,163,184,0.20)] px-1.5 py-1" id="action-buttons">
+            <ShareQrButton setShowShareQr={setShowShareQr} />
+            <span className="w-px h-4 bg-[rgba(148,163,184,0.15)]" />
+            <button
+              id="leaderboard-btn"
+              className="text-[#64748b] hover:text-[#facc15] text-sm transition-colors cursor-pointer bg-transparent border-none p-0 leading-none flex items-center"
+              title="Leaderboard"
+              onClick={() => setShowLeaderboard(true)}
+            >
+              🏆
+            </button>
+          </span>
           <span className="text-[#64748b] text-[10px] sm:text-xs font-digital tracking-wider whitespace-nowrap">BALANCE</span>
           <span id="balance-display" className="text-glow-green font-digital text-lg sm:text-xl md:text-2xl font-bold text-[#4ade80] whitespace-nowrap">
             ${state.balance.toLocaleString('en-US')}
